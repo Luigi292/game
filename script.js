@@ -84,19 +84,13 @@ let words = [
         hint: "A declaration of something"
     },
     {
-        word: "second",
-        hint: "One-sixtieth of a minute"
+        word: "albany",
+        hint: "The capital city of the state of New York"
     },
     {
         word: "library",
         hint: "Place containing collection of books"
     },
-
-    
-
-
-
-
 
 
 
@@ -111,23 +105,20 @@ let words = [
     },
     {
         word: "music",
-        hint: "Without life would be boring"
+        hint: "Without it..life would be boring"
     },
     {
         word: "bitcoin",
         hint: "It's the King of Cripto"
     },
-    {
-        word: "wall",
-        hint: "It's great in China"
-    },
+ 
     {
         word: "spaghetti",
-        hint: "The Noodles.. in Italy"
+        hint: "The Noodles..in Italy"
     },
     {
         word: "expensive",
-        hint: "not cheap"
+        hint: "Not cheap"
     },
     {
         word: "procrastination",
