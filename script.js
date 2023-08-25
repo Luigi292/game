@@ -2,7 +2,7 @@ let words = [
 
     {
     word: "spaghetti",
-    hint: "The Noodles..in Italy"
+    hint: "The Noodles.. in Italy"
     },
 
     {
@@ -106,8 +106,8 @@ let words = [
 
 
     {
-        word: "friend",
-        hint: "Person other than a family member"
+        word: "tomatoes",
+        hint: "Good for salad.. or pizza sauce!"
     },
     {
         word: "pocket",
@@ -161,11 +161,167 @@ let words = [
         word: "expensive",
         hint: "Not cheap"
     },
+
+
+    {
+        word: "sunshine",
+        hint: "The light and warmth from the sun"
+    },
+    
+    {
+        word: "umbrella",
+        hint: "A device used to protect from rain or sun"
+    },
+    
+    {
+        word: "adventure",
+        hint: "An exciting and unusual experience or journey"
+    },
+    
+    {
+        word: "chocolate",
+        hint: "A sweet, usually brown, treat made from cacao beans"
+    },
+    
+    {
+        word: "mountain",
+        hint: "A large landform that rises steeply above its surroundings"
+    },
+    
+    {
+        word: "oxygen",
+        hint: "A chemical element essential for life on Earth"
+    },
+    
+    {
+        word: "wonderful",
+        hint: "Something that is extremely good or pleasing"
+    },
+    
+    {
+        word: "happiness",
+        hint: "The state of being happy, content, or joyful"
+    },
+    
+    {
+        word: "telephone",
+        hint: "A device for transmitting voice or communication over a distance"
+    },
+    
+    {
+        word: "butterfly",
+        hint: "A colorful insect with large, often brightly colored wings"
+    },
+
+
+    {
+        word: "mysterious",
+        hint: "Something that is difficult to understand or explain"
+    },
+    
+    {
+        word: "waterfall",
+        hint: "A natural cascade of water flowing from a height"
+    },
+    
+    {
+        word: "bicycle",
+        hint: "A two-wheeled vehicle powered by pedaling"
+    },
+    
+    {
+        word: "whisper",
+        hint: "Speaking softly or quietly to avoid being heard"
+    },
+    
+    {
+        word: "journey",
+        hint: "A long trip or expedition, typically for adventure"
+    },
+    
+    {
+        word: "laughter",
+        hint: "The sound of amusement or joy"
+    },
+    
+    {
+        word: "festival",
+        hint: "A celebration or occasion of a particular type"
+    },
+    
+    {
+        word: "fireworks",
+        hint: "Explosive pyrotechnic devices used for entertainment"
+    },
+    
+    {
+        word: "architecture",
+        hint: "The art and science of designing and constructing buildings"
+    },
+    
+    {
+        word: "galaxy",
+        hint: "A vast system of stars, gas, dust, and dark matter"
+    },
+    
+    {
+        word: "jungle",
+        hint: "A dense, tropical forest with lush vegetation"
+    },
+    
+    {
+        word: "independence",
+        hint: "Freedom from outside control or support"
+    },
+    
+    {
+        word: "adrenaline",
+        hint: "A hormone that prepares the body for intense physical activity"
+    },
+    
+    {
+        word: "volcano",
+        hint: "A mountain that erupts with molten lava, ash, and gases"
+    },
+    
+    {
+        word: "symphony",
+        hint: "A long musical composition for an orchestra"
+    },
+    
+    {
+        word: "fragrance",
+        hint: "A pleasant, sweet smell or aroma"
+    },
+    
+    {
+        word: "horizon",
+        hint: "The line at which the Earth's surface and the sky appear to meet"
+    },
+    
+    {
+        word: "celestial",
+        hint: "Relating to the sky, stars, or the heavens"
+    },
+    
+    {
+        word: "paradise",
+        hint: "An ideal or perfect place or state of happiness"
+    },
+    
+    {
+        word: "discovery",
+        hint: "The act of finding or learning something new"
+    }
+    
+    
  
     
 ]
 
 
+const scoreDisplay = document.querySelector(".score-button span b");
+let score = 0; // Initialize the score to 0
 
 const wordText = document.querySelector(".word"),
 hintText = document.querySelector(".hint span"),
@@ -201,11 +357,40 @@ const initGame = () => {
 }
 initGame();
 const checkWord = () => {
+
+    const scoreDisplay = document.querySelector(".score span");
+    let score = 0; // Initialize the score to 0
+
+
     let userWord = inputField.value.toLowerCase();
     if(!userWord) return alert("Please enter the word to check!");
     if(userWord !== correctWord) return alert(`Oops! ${userWord} is not a correct word`);
     alert(`Congrats! ${correctWord.toUpperCase()} is the correct word`);
+
+ 
+  
+
+
     initGame();
+
+
+
 }
+
+
+const handleEnterKeyPress = (event) => {
+    if (event.keyCode === 13) { // 13 is the key code for Enter
+      checkWord();
+    }
+  };
+
+
+
 refreshBtn.addEventListener("click", initGame);
 checkBtn.addEventListener("click", checkWord);
+inputField.addEventListener("keydown", handleEnterKeyPress);
+
+
+
+
+
