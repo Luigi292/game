@@ -1,36 +1,70 @@
 let words = [
+
+    {
+    word: "spaghetti",
+    hint: "The Noodles..in Italy"
+    },
+
+    {
+    word: "procrastination",
+    hint: "The action of delaying/postponing something."
+    },
+
+
     {
         word: "addition",
         hint: "The process of adding numbers"
     },
+
+
     {
         word: "meeting",
         hint: "Event in which people come together"
     },
+
+
+    {
+        word: "friend",
+        hint: "Very important person in life"
+    },
+
+
     {
         word: "number",
         hint: "Math symbol used for counting"
     },
+
+
     {
         word: "exchange",
         hint: "The act of trading"
     },
+
+
     {
         word: "canvas",
         hint: "Piece of fabric for oil painting"
     },
+
+
     {
         word: "garden",
         hint: "Space for planting flower and plant"
     },
+
+
     {
         word: "position",
         hint: "Location of someone or something"
     },
+
+
     {
         word: "feather",
         hint: "Hair like outer covering of bird"
     },
+
+
     {
         word: "comfort",
         hint: "A pleasant feeling of relaxation"
@@ -51,18 +85,26 @@ let words = [
         word: "group",
         hint: "A number of objects or persons"
     },
+
+
     {
         word: "taste",
         hint: "Ability of tongue to detect flavour"
     },
+
+
     {
         word: "store",
         hint: "Large shop where goods are traded"
     },
+
+
     {
         word: "field",
         hint: "Area of land for farming activities"
     },
+
+
     {
         word: "friend",
         hint: "Person other than a family member"
@@ -71,14 +113,24 @@ let words = [
         word: "pocket",
         hint: "A bag for carrying small items"
     },
+
     {
         word: "needle",
         hint: "A thin and sharp metal pin"
     },
+
+     
+    {
+        word: "bitcoin",
+        hint: "It's the King of Cripto"
+    },
+
+
     {
         word: "expert",
         hint: "Person with extensive knowledge"
     },
+
     {
         word: "statement",
         hint: "A declaration of something"
@@ -87,43 +139,29 @@ let words = [
         word: "albany",
         hint: "The capital city of the state of New York"
     },
+
     {
         word: "library",
         hint: "Place containing collection of books"
     },
 
 
-
-
     {
         word: "queen",
         hint: "Best band in the history"
     },
-    {
-        word: "friend",
-        hint: "Very important person in life"
-    },
+
     {
         word: "music",
         hint: "Without it..life would be boring"
     },
-    {
-        word: "bitcoin",
-        hint: "It's the King of Cripto"
-    },
  
-    {
-        word: "spaghetti",
-        hint: "The Noodles..in Italy"
-    },
+
     {
         word: "expensive",
         hint: "Not cheap"
     },
-    {
-        word: "procrastination",
-        hint: "The action of delaying/postponing something."
-    },
+ 
     
 ]
 
