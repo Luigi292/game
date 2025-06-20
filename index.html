@@ -2,36 +2,102 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Word Scramble Game | CodingNepal</title>
+    <title>Word Scramble Challenge</title>
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="script.js" defer></script>
   </head>
   <body>
     <div class="container">
-      <h2>Word Scramble</h2>
-      <div class="content">
-        <p class="word"></p>
-        <div class="details">
-          <p class="hint">Hint: <span></span></p>
-          <p class="time">Time Left: <span><b>30</b>s</span></p>
-       
+      <div class="header">
+        <h2><i class="fas fa-random"></i> Word Scramble Challenge</h2>
+        <div class="score-display">
+          <span class="score-label">Score:</span>
+          <span class="score-value" id="score">0</span>
+          <div class="progress-bar">
+            <div class="progress" id="progress"></div>
+          </div>
         </div>
-        <input type="text" spellcheck="false" placeholder="Enter a valid word">
-        <!-- Add the score button -->
-
-        <br>
-        <br>
-
-        <section class="score-button" id="score-button">
-          Score: <span><b>/64</b></span>
-
-        </section>
-
-
-        <div class="buttons">
-          <button class="refresh-word">Refresh Word</button>
-          <button class="check-word">Check Word</button>
+      </div>
+      
+      <div class="content">
+        <div class="game-area">
+          <p class="word"></p>
+          <div class="details">
+            <p class="hint-area">
+              <button class="hint-btn"><i class="fas fa-lightbulb"></i> Need Hint? (-50% points)</button>
+              <span class="hint-text"></span>
+            </p>
+            <p class="time"><i class="fas fa-clock"></i> Time Left: <span><b>30</b>s</span></p>
+          </div>
+          <input type="text" spellcheck="false" placeholder="Unscramble the word...">
+          
+          <div class="buttons">
+            <button class="refresh-word"><i class="fas fa-sync-alt"></i> New Word</button>
+            <button class="check-word"><i class="fas fa-check"></i> Check</button>
+            <button class="tutorial-btn"><i class="fas fa-question-circle"></i> How to Play</button>
+          </div>
+        </div>
+        
+        <div class="prizes">
+          <div class="prize-level" id="prize-100">
+            <i class="fas fa-trophy bronze"></i>
+            <span>100 Points</span>
+          </div>
+          <div class="prize-level" id="prize-500">
+            <i class="fas fa-trophy silver"></i>
+            <span>500 Points</span>
+          </div>
+          <div class="prize-level" id="prize-1000">
+            <i class="fas fa-trophy gold"></i>
+            <span>1000 Points</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="celebration" id="celebration"></div>
+      
+      <!-- Tutorial Modal -->
+      <div class="modal" id="tutorial-modal">
+        <div class="modal-content">
+          <span class="close-modal">&times;</span>
+          <h3><i class="fas fa-graduation-cap"></i> How to Play</h3>
+          <div class="tutorial-content">
+            <div class="tutorial-step">
+              <h4><i class="fas fa-random"></i> Game Objective</h4>
+              <p>Unscramble the letters to form the correct word. Each correct answer earns you points!</p>
+            </div>
+            
+            <div class="tutorial-step">
+              <h4><i class="fas fa-star"></i> Scoring System</h4>
+              <ul>
+                <li><strong>1 point per letter</strong> in the unscrambled word</li>
+                <li>Example: "apple" (5 letters) = 5 points</li>
+                <li>If you use a hint, your points will be <strong>reduced by 50%</strong></li>
+              </ul>
+            </div>
+            
+            <div class="tutorial-step">
+              <h4><i class="fas fa-trophy"></i> Prize Levels</h4>
+              <ul>
+                <li><span class="bronze-text"><i class="fas fa-trophy bronze"></i> 100 points</span> - Bronze Prize</li>
+                <li><span class="silver-text"><i class="fas fa-trophy silver"></i> 500 points</span> - Silver Prize</li>
+                <li><span class="gold-text"><i class="fas fa-trophy gold"></i> 1000 points</span> - Gold Prize & Game Completion!</li>
+              </ul>
+            </div>
+            
+            <div class="tutorial-step">
+              <h4><i class="fas fa-lightbulb"></i> Hint System</h4>
+              <p>Stuck? Click the "Need Hint" button to get help, but remember - using a hint will reduce your potential points for that word by half.</p>
+            </div>
+            
+            <div class="tutorial-step">
+              <h4><i class="fas fa-clock"></i> Time Limit</h4>
+              <p>You have 30 seconds to guess each word. The timer resets with each new word.</p>
+            </div>
+          </div>
+          <button class="got-it-btn">Got it! Let's Play!</button>
         </div>
       </div>
     </div>
