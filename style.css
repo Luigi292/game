@@ -85,36 +85,18 @@ body {
 }
 
 .word {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 30px;
-}
-
-.word-letter {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 50px;
-  background: #f5f5f5;
-  border-radius: 5px;
-  font-size: 24px;
-  font-weight: bold;
-  color: #333;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  text-transform: uppercase;
-}
-
-.word span {
-  display: inline-block;
-  min-width: 30px;
+  user-select: none;
+  font-size: 36px;
+  font-weight: 700;
   text-align: center;
-  background: #f5f5f5;
-  padding: 5px 10px;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  letter-spacing: 20px;
+  margin-right: -20px;
+  word-break: break-all;
+  text-transform: uppercase;
+  color: #333;
+  margin-bottom: 30px;
+  font-family: 'Poppins', sans-serif;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
 
 .details {
@@ -307,7 +289,6 @@ input::placeholder {
 
 .prize-level.active i {
   transform: scale(1.2);
-  transition: transform 0.3s ease;
 }
 
 .celebration {
@@ -448,75 +429,6 @@ input::placeholder {
   font-weight: 600;
 }
 
-/* Game Alert and Confirm styles */
-.game-alert, .game-confirm {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.7);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-}
-
-.game-alert-content, .game-confirm-content {
-  background: white;
-  padding: 25px;
-  border-radius: 10px;
-  width: 90%;
-  max-width: 400px;
-  text-align: center;
-  animation: modalFadeIn 0.3s ease;
-}
-
-.game-alert h3, .game-confirm h3 {
-  color: #5372F0;
-  margin-bottom: 15px;
-}
-
-.game-alert p, .game-confirm p {
-  margin-bottom: 20px;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.game-alert-btn, .confirm-yes, .confirm-no {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.game-alert-btn, .confirm-yes {
-  background: #5372F0;
-  color: white;
-}
-
-.confirm-no {
-  background: #6C757D;
-  color: white;
-  margin-left: 10px;
-}
-
-.game-alert-btn:hover, .confirm-yes:hover {
-  background: #3a56d4;
-}
-
-.confirm-no:hover {
-  background: #5a6268;
-}
-
-.confirm-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-
 @media screen and (max-width: 520px) {
   .container {
     width: 100%;
@@ -532,6 +444,8 @@ input::placeholder {
   
   .word {
     font-size: 28px;
+    letter-spacing: 15px;
+    margin-right: -15px;
   }
   
   .buttons button {
