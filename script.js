@@ -123,7 +123,18 @@ const wordText = document.querySelector(".word"),
       celebration = document.getElementById("celebration"),
       tutorialModal = document.getElementById("tutorial-modal"),
       closeModal = document.querySelector(".close-modal"),
-      gotItBtn = document.querySelector(".got-it-btn");
+      gotItBtn = document.querySelector(".got-it-btn"),
+      alertModal = document.getElementById("alert-modal"),
+      alertTitle = document.getElementById("alert-title"),
+      alertMessage = document.getElementById("alert-message"),
+      alertConfirm = document.getElementById("alert-confirm"),
+      alertCancel = document.getElementById("alert-cancel"),
+      hintModal = document.getElementById("hint-modal"),
+      hintConfirm = document.getElementById("hint-confirm"),
+      hintCancel = document.getElementById("hint-cancel"),
+      correctSound = document.getElementById("correctSound"),
+      wrongSound = document.getElementById("wrongSound"),
+      celebrationSound = document.getElementById("celebrationSound");
 
 // Game variables
 let correctWord, timer;
@@ -134,32 +145,66 @@ let prizesAchieved = {
     500: false,
     1000: false
 };
+let currentTime = 30;
+let isTimerPaused = false;
 
 // Show tutorial modal on first visit
 const firstVisit = localStorage.getItem('firstVisit');
 if (!firstVisit) {
     setTimeout(() => {
         tutorialModal.classList.add('show');
+        isTimerPaused = true;
         localStorage.setItem('firstVisit', 'true');
     }, 500);
 }
 
+// Custom alert function
+const showAlert = (title, message, confirmCallback = null, cancelCallback = null) => {
+    alertTitle.textContent = title;
+    alertMessage.textContent = message;
+    
+    alertConfirm.onclick = () => {
+        alertModal.classList.remove("show");
+        if (confirmCallback) confirmCallback();
+    };
+    
+    if (cancelCallback) {
+        alertCancel.style.display = "inline-block";
+        alertCancel.onclick = () => {
+            alertModal.classList.remove("show");
+            cancelCallback();
+        };
+    } else {
+        alertCancel.style.display = "none";
+    }
+    
+    alertModal.classList.add("show");
+};
+
 // Initialize timer
 const initTimer = maxTime => {
+    currentTime = maxTime;
     clearInterval(timer);
     timer = setInterval(() => {
-        if (maxTime > 0) {
-            maxTime--;
-            timeText.innerText = maxTime;
-            if (maxTime <= 10) {
-                timeText.parentElement.style.color = "#ff4757";
+        if (!isTimerPaused) {
+            if (currentTime > 0) {
+                currentTime--;
+                timeText.innerText = currentTime;
+                if (currentTime <= 10) {
+                    timeText.parentElement.style.color = "#ff4757";
+                    timeText.parentElement.style.fontWeight = "700";
+                }
+            } else {
+                clearInterval(timer);
+                const pointsLost = correctWord.length;
+                showAlert(
+                    "Time's Up!",
+                    `The correct word was: ${correctWord.toUpperCase()}\nYou lost ${pointsLost} points!`,
+                    initGame
+                );
+                wrongSound.play();
+                updateScore(-pointsLost);
             }
-        } else {
-            clearInterval(timer);
-            const pointsLost = correctWord.length;
-            alert(`Time's up! The correct word was: ${correctWord.toUpperCase()}\nYou lost ${pointsLost} points!`);
-            updateScore(-pointsLost);
-            initGame();
         }
     }, 1000);
 };
@@ -168,6 +213,7 @@ const initTimer = maxTime => {
 const initGame = () => {
     initTimer(30);
     timeText.parentElement.style.color = "#333";
+    timeText.parentElement.style.fontWeight = "400";
     usedHint = false;
     hintText.classList.remove("show");
     hintBtn.classList.remove("used");
@@ -175,13 +221,15 @@ const initGame = () => {
     let randomObj = words[Math.floor(Math.random() * words.length)];
     let wordArray = randomObj.word.split("");
     
+    // Shuffle the word
     for (let i = wordArray.length - 1; i > 0; i--) {
         let j = Math.floor(Math.random() * (i + 1));
         [wordArray[i], wordArray[j]] = [wordArray[j], wordArray[i]];
     }
     
     wordText.innerText = wordArray.join("");
-    hintText.innerText = randomObj.hint;
+    // Format hint text with better readability
+    hintText.innerHTML = `<strong>Hint:</strong> ${randomObj.hint}`;
     correctWord = randomObj.word.toLowerCase();
     inputField.value = "";
     inputField.setAttribute("maxlength", correctWord.length);
@@ -224,7 +272,8 @@ const checkPrizes = () => {
 
 // Celebration effect
 const celebrate = (message, color) => {
-    alert(`🎉 ${message} 🎉`);
+    celebrationSound.play();
+    showAlert("Congratulations!", message);
     
     celebration.style.opacity = "1";
     celebration.innerHTML = "";
@@ -255,19 +304,24 @@ const checkWord = () => {
     let userWord = inputField.value.toLowerCase().trim();
     
     if (!userWord) {
-        alert("Please enter a word to check!");
+        showAlert("Empty Field", "Please enter a word to check!");
         return;
     }
     
     if (userWord !== correctWord) {
         const pointsLost = correctWord.length;
-        alert(`Oops! "${userWord}" is not correct. You lost ${pointsLost} points!`);
+        wrongSound.play();
+        showAlert(
+            "Incorrect!", 
+            `"${userWord}" is not correct.\nYou lost ${pointsLost} points!`, 
+            initGame
+        );
         updateScore(-pointsLost);
-        initGame();
         return;
     }
     
     clearInterval(timer);
+    correctSound.play();
     
     let points = correctWord.length;
     
@@ -280,29 +334,30 @@ const checkWord = () => {
         wordText.classList.remove("correct-animation");
     }, 500);
     
-    alert(`🎯 Correct! "${correctWord.toUpperCase()}" earned you ${points} points! (${correctWord.length} letters${usedHint ? " -50% for using hint" : ""})`);
+    showAlert(
+        "Correct!", 
+        `"${correctWord.toUpperCase()}" earned you ${points} points! (${correctWord.length} letters${usedHint ? " -50% for using hint" : ""})`,
+        initGame
+    );
     updateScore(points);
-    initGame();
 };
 
 // Show hint
 const showHint = () => {
     if (!hintText.classList.contains("show")) {
-        const confirmHint = confirm("Using a hint will reduce your points for this word by 50%. Do you want to continue?");
-        if (confirmHint) {
-            hintText.classList.add("show");
-            hintBtn.classList.add("used");
-            usedHint = true;
-        }
+        hintModal.classList.add("show");
     }
 };
 
 // Event listeners
 refreshBtn.addEventListener("click", () => {
     const pointsLost = correctWord.length;
-    alert(`You changed the word before solving it! You lost ${pointsLost} points.`);
+    showAlert(
+        "Word Changed", 
+        `You changed the word before solving it!\nYou lost ${pointsLost} points.`, 
+        initGame
+    );
     updateScore(-pointsLost);
-    initGame();
 });
 
 checkBtn.addEventListener("click", checkWord);
@@ -315,21 +370,40 @@ inputField.addEventListener("keydown", (e) => {
 });
 
 tutorialBtn.addEventListener("click", () => {
+    isTimerPaused = true;
     tutorialModal.classList.add("show");
 });
 
 closeModal.addEventListener("click", () => {
+    isTimerPaused = false;
     tutorialModal.classList.remove("show");
 });
 
 gotItBtn.addEventListener("click", () => {
+    isTimerPaused = false;
     tutorialModal.classList.remove("show");
 });
 
 window.addEventListener("click", (e) => {
-    if (e.target === tutorialModal) {
+    if (e.target === tutorialModal || e.target === alertModal || e.target === hintModal) {
+        if (e.target === tutorialModal) {
+            isTimerPaused = false;
+        }
         tutorialModal.classList.remove("show");
+        alertModal.classList.remove("show");
+        hintModal.classList.remove("show");
     }
+});
+
+hintConfirm.addEventListener("click", () => {
+    hintText.classList.add("show");
+    hintBtn.classList.add("used");
+    usedHint = true;
+    hintModal.classList.remove("show");
+});
+
+hintCancel.addEventListener("click", () => {
+    hintModal.classList.remove("show");
 });
 
 // Update tutorial content to include compound words information
@@ -340,7 +414,7 @@ document.addEventListener('DOMContentLoaded', () => {
     compoundWordsInfo.innerHTML = `
         <h4><i class="fas fa-puzzle-piece"></i> Word Format</h4>
         <p>Some words may be compound words (usually written as two separate words) but will appear as one combined word in the game.</p>
-        <p>Example: "sunshine" (sun + shine), "fireworks" (fire + works)</p>
+        <p>Example: "MachineLearning" (Machine + Learning), "AugmentedReality" (Augmented + Reality)</p>
     `;
     tutorialContent.insertBefore(compoundWordsInfo, tutorialContent.children[1]);
 });
