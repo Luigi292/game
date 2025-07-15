@@ -1,111 +1,3 @@
-let words = [
-    { word: "spaghetti", hint: "The Noodles.. in Italy" },
-    { word: "procrastination", hint: "The action of delaying/postponing something" },
-    { word: "addition", hint: "The process of adding numbers" },
-    { word: "meeting", hint: "Event in which people come together" },
-    { word: "friend", hint: "Very important person in life" },
-    { word: "number", hint: "Math symbol used for counting" },
-    { word: "exchange", hint: "The act of trading" },
-    { word: "canvas", hint: "Piece of fabric for oil painting" },
-    { word: "garden", hint: "Space for planting flower and plant" },
-    { word: "position", hint: "Location of someone or something" },
-    { word: "feather", hint: "Hair like outer covering of bird" },
-    { word: "comfort", hint: "A pleasant feeling of relaxation" },
-    { word: "tongue", hint: "The muscular organ of mouth" },
-    { word: "expansion", hint: "The process of increase or grow" },
-    { word: "country", hint: "A politically identified region" },
-    { word: "group", hint: "A number of objects or persons" },
-    { word: "taste", hint: "Ability of tongue to detect flavour" },
-    { word: "store", hint: "Large shop where goods are traded" },
-    { word: "field", hint: "Area of land for farming activities" },
-    { word: "tomatoes", hint: "Good for salad.. or pizza sauce!" },
-    { word: "pocket", hint: "A bag for carrying small items" },
-    { word: "needle", hint: "A thin and sharp metal pin" },
-    { word: "bitcoin", hint: "It's the King of Crypto" },
-    { word: "expert", hint: "Person with extensive knowledge" },
-    { word: "statement", hint: "A declaration of something" },
-    { word: "albany", hint: "The capital city of the state of New York" },
-    { word: "library", hint: "Place containing collection of books" },
-    { word: "queen", hint: "Best band in the history" },
-    { word: "music", hint: "Without it..life would be boring" },
-    { word: "expensive", hint: "Not cheap" },
-    { word: "sunshine", hint: "The light and warmth from the sun" },
-    { word: "umbrella", hint: "A device used to protect from rain or sun" },
-    { word: "adventure", hint: "An exciting and unusual experience or journey" },
-    { word: "chocolate", hint: "A sweet, usually brown, treat made from cacao beans" },
-    { word: "mountain", hint: "A large landform that rises steeply above its surroundings" },
-    { word: "oxygen", hint: "A chemical element essential for life on Earth" },
-    { word: "wonderful", hint: "Something that is extremely good or pleasing" },
-    { word: "happiness", hint: "The state of being happy, content, or joyful" },
-    { word: "telephone", hint: "A device for transmitting voice or communication over a distance" },
-    { word: "butterfly", hint: "A colorful insect with large, often brightly colored wings" },
-    { word: "mysterious", hint: "Something that is difficult to understand or explain" },
-    { word: "waterfall", hint: "A natural cascade of water flowing from a height" },
-    { word: "bicycle", hint: "A two-wheeled vehicle powered by pedaling" },
-    { word: "whisper", hint: "Speaking softly or quietly to avoid being heard" },
-    { word: "journey", hint: "A long trip or expedition, typically for adventure" },
-    { word: "laughter", hint: "The sound of amusement or joy" },
-    { word: "festival", hint: "A celebration or occasion of a particular type" },
-    { word: "fireworks", hint: "Explosive pyrotechnic devices used for entertainment" },
-    { word: "architecture", hint: "The art and science of designing and constructing buildings" },
-    { word: "galaxy", hint: "A vast system of stars, gas, dust, and dark matter" },
-    { word: "jungle", hint: "A dense, tropical forest with lush vegetation" },
-    { word: "independence", hint: "Freedom from outside control or support" },
-    { word: "adrenaline", hint: "A hormone that prepares the body for intense physical activity" },
-    { word: "volcano", hint: "A mountain that erupts with molten lava, ash, and gases" },
-    { word: "symphony", hint: "A long musical composition for an orchestra" },
-    { word: "fragrance", hint: "A pleasant, sweet smell or aroma" },
-    { word: "horizon", hint: "The line at which the Earth's surface and the sky appear to meet" },
-    { word: "celestial", hint: "Relating to the sky, stars, or the heavens" },
-    { word: "paradise", hint: "An ideal or perfect place or state of happiness" },
-    { word: "discovery", hint: "The act of finding or learning something new" },
-    { word: "keyboard", hint: "Input device for computers with keys" },
-    { word: "javascript", hint: "Programming language of the web" },
-    { word: "developer", hint: "Person who writes computer programs" },
-    { word: "internet", hint: "Global network connecting computers" },
-    { word: "browser", hint: "Software used to access the World Wide Web" },
-    { word: "algorithm", hint: "Step-by-step procedure for calculations" },
-    { word: "database", hint: "Organized collection of structured information" },
-    { word: "function", hint: "Self-contained module of code" },
-    { word: "variable", hint: "Container for storing data values" },
-    { word: "syntax", hint: "Set of rules that define code structure" },
-    { word: "framework", hint: "Platform for developing software applications" },
-    { word: "responsive", hint: "Design that works on any device size" },
-    { word: "debugging", hint: "Process of finding and fixing errors in code" },
-    { word: "iteration", hint: "Repetition of a process in programming" },
-    { word: "recursion", hint: "Function that calls itself" },
-    { word: "asynchronous", hint: "Operations not occurring at the same time" },
-    { word: "encryption", hint: "Process of encoding information" },
-    { word: "authentication", hint: "Verification of identity" },
-    { word: "repository", hint: "Storage location for software packages" },
-    { word: "deployment", hint: "Process of making software available for use" },
-    { word: "scalability", hint: "Ability of a system to handle growing amounts of work" },
-    { word: "virtualization", hint: "Creating virtual rather than actual versions" },
-    { word: "artificial", hint: "Made or produced by human beings rather than occurring naturally" },
-    { word: "blockchain", hint: "Decentralized digital ledger technology" },
-    { word: "cybersecurity", hint: "Protection of internet-connected systems" },
-    { word: "machinelearning", hint: "AI that allows systems to learn from data" },
-    { word: "neuralnetwork", hint: "Computer system modeled on the human brain" },
-    { word: "quantumcomputing", hint: "Computing using quantum-mechanical phenomena" },
-    { word: "augmentedreality", hint: "Interactive experience of real-world environment" },
-    { word: "virtualreality", hint: "Computer-generated simulation of 3D environment" },
-    { word: "internetofthings", hint: "Network of physical objects with embedded technology" },
-    { word: "extraterrestrial", hint: "Originating or existing outside the earth" },
-    { word: "photosynthesis", hint: "Process by which green plants make food" },
-    { word: "renaissance", hint: "Period of European cultural, artistic, and political rebirth" },
-    { word: "kaleidoscope", hint: "Optical instrument with mirrors reflecting colored glass" },
-    { word: "xylophone", hint: "Musical instrument with wooden bars struck by mallets" },
-    { word: "quintessential", hint: "Representing the most perfect or typical example" },
-    { word: "magnificent", hint: "Extremely beautiful and impressive" },
-    { word: "phenomenon", hint: "A fact or situation observed to exist" },
-    { word: "zephyr", hint: "A gentle, mild breeze" },
-    { word: "quasar", hint: "Massive and extremely remote celestial object" },
-    { word: "jubilee", hint: "Special anniversary of an event" },
-    { word: "equilibrium", hint: "A state of physical balance" },
-    { word: "kaleidoscopic", hint: "Having complex patterns of colors" },
-    { word: "labyrinth", hint: "A complicated irregular network of passages" }
-];
-
 // DOM Elements
 const wordText = document.querySelector(".word"),
       hintBtn = document.querySelector(".hint-btn"),
@@ -137,6 +29,8 @@ const wordText = document.querySelector(".word"),
       celebrationSound = document.getElementById("celebrationSound");
 
 // Game variables
+let words = [];
+let wordDifficultyGroups = {};
 let correctWord, timer;
 let score = 0;
 let usedHint = false;
@@ -147,6 +41,142 @@ let prizesAchieved = {
 };
 let currentTime = 30;
 let isTimerPaused = false;
+
+// Word difficulty categories (based on length and complexity)
+const difficultyCategories = [
+    { minScore: 0, maxScore: 200, maxLength: 6, description: "Very Easy" }, // 0-200 points
+    { minScore: 201, maxScore: 400, maxLength: 8, description: "Easy" }, // 201-400 points
+    { minScore: 401, maxScore: 600, maxLength: 10, description: "Medium" }, // 401-600 points
+    { minScore: 601, maxScore: 800, maxLength: 12, description: "Hard" }, // 601-800 points
+    { minScore: 801, maxScore: 1000, maxLength: 20, description: "Very Hard" } // 801-1000 points
+];
+
+// Common words that should appear more often in lower difficulty levels
+const commonWords = [
+    "friend", "number", "music", "queen", "store", "field", "taste", "group", 
+    "garden", "tongue", "feather", "comfort", "position", "canvas", "exchange", 
+    "meeting", "addition", "friend", "tomatoes", "pocket", "needle", "library", 
+    "expensive", "sunshine", "umbrella", "chocolate", "bicycle", "whisper", 
+    "laughter", "noodles", "keyboard", "internet", "browser", "function", 
+    "variable", "notebook", "rainbow", "sunflower", "violin", "yesterday", 
+    "jacket", "lemonade", "waffle", "island", "ketchup", "yogurt"
+];
+
+// Fetch words from JSON file and categorize them by difficulty
+fetch('words.json')
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.json();
+    })
+    .then(data => {
+        words = data;
+        categorizeWordsByDifficulty();
+        initGame();
+    })
+    .catch(error => {
+        console.error('Error loading words:', error);
+        // Fallback words if JSON fails to load
+        words = [
+            { word: "default", hint: "Fallback word" },
+            { word: "example", hint: "Sample word" },
+            { word: "javascript", hint: "Programming language of the web" },
+            { word: "developer", hint: "Person who writes computer programs" }
+        ];
+        categorizeWordsByDifficulty();
+        initGame();
+    });
+
+// Categorize words by difficulty based on length and commonality
+const categorizeWordsByDifficulty = () => {
+    wordDifficultyGroups = {
+        veryEasy: [],
+        easy: [],
+        medium: [],
+        hard: [],
+        veryHard: []
+    };
+
+    words.forEach(wordObj => {
+        const word = wordObj.word.toLowerCase();
+        const length = word.length;
+        const isCommon = commonWords.includes(word);
+
+        if (length <= 6 || isCommon) {
+            wordDifficultyGroups.veryEasy.push(wordObj);
+        } 
+        else if (length <= 8) {
+            wordDifficultyGroups.easy.push(wordObj);
+        }
+        else if (length <= 10) {
+            wordDifficultyGroups.medium.push(wordObj);
+        }
+        else if (length <= 12) {
+            wordDifficultyGroups.hard.push(wordObj);
+        }
+        else {
+            wordDifficultyGroups.veryHard.push(wordObj);
+        }
+    });
+};
+
+// Get words based on current score
+const getWordsForCurrentScore = () => {
+    let eligibleWords = [];
+    
+    if (score <= 200) {
+        // Mostly very easy words, some easy
+        eligibleWords = [...wordDifficultyGroups.veryEasy];
+        if (Math.random() > 0.7) { // 30% chance to include an easy word
+            eligibleWords = eligibleWords.concat(wordDifficultyGroups.easy);
+        }
+    } 
+    else if (score <= 400) {
+        // Mostly easy words, some very easy and medium
+        eligibleWords = [...wordDifficultyGroups.easy];
+        if (Math.random() > 0.8) { // 20% chance for very easy
+            eligibleWords = eligibleWords.concat(wordDifficultyGroups.veryEasy);
+        }
+        if (Math.random() > 0.7) { // 30% chance for medium
+            eligibleWords = eligibleWords.concat(wordDifficultyGroups.medium);
+        }
+    }
+    else if (score <= 600) {
+        // Mostly medium words, some easy and hard
+        eligibleWords = [...wordDifficultyGroups.medium];
+        if (Math.random() > 0.8) { // 20% chance for easy
+            eligibleWords = eligibleWords.concat(wordDifficultyGroups.easy);
+        }
+        if (Math.random() > 0.7) { // 30% chance for hard
+            eligibleWords = eligibleWords.concat(wordDifficultyGroups.hard);
+        }
+    }
+    else if (score <= 800) {
+        // Mostly hard words, some medium and very hard
+        eligibleWords = [...wordDifficultyGroups.hard];
+        if (Math.random() > 0.8) { // 20% chance for medium
+            eligibleWords = eligibleWords.concat(wordDifficultyGroups.medium);
+        }
+        if (Math.random() > 0.7) { // 30% chance for very hard
+            eligibleWords = eligibleWords.concat(wordDifficultyGroups.veryHard);
+        }
+    }
+    else {
+        // Mostly very hard words, some hard
+        eligibleWords = [...wordDifficultyGroups.veryHard];
+        if (Math.random() > 0.8) { // 20% chance for hard
+            eligibleWords = eligibleWords.concat(wordDifficultyGroups.hard);
+        }
+    }
+
+    // If for some reason no words are eligible (shouldn't happen), return all words
+    if (eligibleWords.length === 0) {
+        return words;
+    }
+
+    return eligibleWords;
+};
 
 // Show tutorial modal on first visit
 const firstVisit = localStorage.getItem('firstVisit');
@@ -211,6 +241,8 @@ const initTimer = maxTime => {
 
 // Initialize game
 const initGame = () => {
+    if (words.length === 0) return; // Don't initialize if words aren't loaded yet
+    
     initTimer(30);
     timeText.parentElement.style.color = "#333";
     timeText.parentElement.style.fontWeight = "400";
@@ -218,7 +250,9 @@ const initGame = () => {
     hintText.classList.remove("show");
     hintBtn.classList.remove("used");
     
-    let randomObj = words[Math.floor(Math.random() * words.length)];
+    // Get words appropriate for current score
+    const eligibleWords = getWordsForCurrentScore();
+    let randomObj = eligibleWords[Math.floor(Math.random() * eligibleWords.length)];
     let wordArray = randomObj.word.split("");
     
     // Shuffle the word
@@ -228,7 +262,6 @@ const initGame = () => {
     }
     
     wordText.innerText = wordArray.join("");
-    // Format hint text with better readability
     hintText.innerHTML = `<strong>Hint:</strong> ${randomObj.hint}`;
     correctWord = randomObj.word.toLowerCase();
     inputField.value = "";
@@ -239,7 +272,6 @@ const initGame = () => {
 // Update score display
 const updateScore = (points) => {
     score += points;
-    // Ensure score doesn't go below 0
     score = Math.max(0, score);
     scoreDisplay.innerText = score;
     
@@ -418,5 +450,3 @@ document.addEventListener('DOMContentLoaded', () => {
     `;
     tutorialContent.insertBefore(compoundWordsInfo, tutorialContent.children[1]);
 });
-
-initGame();

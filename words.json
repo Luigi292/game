@@ -1,837 +1,211 @@
 [
-    {
-        "word": "spaghetti",
-        "hint": "The Noodles.. in Italy",
-        "common": true
-    },
-    {
-        "word": "procrastination",
-        "hint": "The action of delaying/postponing something",
-        "common": false
-    },
-    {
-        "word": "addition",
-        "hint": "The process of adding numbers",
-        "common": true
-    },
-    {
-        "word": "meeting",
-        "hint": "Event in which people come together",
-        "common": true
-    },
-    {
-        "word": "friend",
-        "hint": "Very important person in life",
-        "common": true
-    },
-    {
-        "word": "number",
-        "hint": "Math symbol used for counting",
-        "common": true
-    },
-    {
-        "word": "exchange",
-        "hint": "The act of trading",
-        "common": true
-    },
-    {
-        "word": "canvas",
-        "hint": "Piece of fabric for oil painting",
-        "common": true
-    },
-    {
-        "word": "garden",
-        "hint": "Space for planting flower and plant",
-        "common": true
-    },
-    {
-        "word": "position",
-        "hint": "Location of someone or something",
-        "common": true
-    },
-    {
-        "word": "feather",
-        "hint": "Hair like outer covering of bird",
-        "common": true
-    },
-    {
-        "word": "comfort",
-        "hint": "A pleasant feeling of relaxation",
-        "common": true
-    },
-    {
-        "word": "tongue",
-        "hint": "The muscular organ of mouth",
-        "common": true
-    },
-    {
-        "word": "expansion",
-        "hint": "The process of increase or grow",
-        "common": false
-    },
-    {
-        "word": "country",
-        "hint": "A politically identified region",
-        "common": true
-    },
-    {
-        "word": "group",
-        "hint": "A number of objects or persons",
-        "common": true
-    },
-    {
-        "word": "taste",
-        "hint": "Ability of tongue to detect flavour",
-        "common": true
-    },
-    {
-        "word": "store",
-        "hint": "Large shop where goods are traded",
-        "common": true
-    },
-    {
-        "word": "field",
-        "hint": "Area of land for farming activities",
-        "common": true
-    },
-    {
-        "word": "tomatoes",
-        "hint": "Good for salad.. or pizza sauce!",
-        "common": true
-    },
-    {
-        "word": "pocket",
-        "hint": "A bag for carrying small items",
-        "common": true
-    },
-    {
-        "word": "needle",
-        "hint": "A thin and sharp metal pin",
-        "common": true
-    },
-    {
-        "word": "bitcoin",
-        "hint": "It's the King of Crypto",
-        "common": false
-    },
-    {
-        "word": "expert",
-        "hint": "Person with extensive knowledge",
-        "common": true
-    },
-    {
-        "word": "statement",
-        "hint": "A declaration of something",
-        "common": true
-    },
-    {
-        "word": "albany",
-        "hint": "The capital city of the state of New York",
-        "common": false
-    },
-    {
-        "word": "library",
-        "hint": "Place containing collection of books",
-        "common": true
-    },
-    {
-        "word": "queen",
-        "hint": "Best band in the history",
-        "common": true
-    },
-    {
-        "word": "music",
-        "hint": "Without it..life would be boring",
-        "common": true
-    },
-    {
-        "word": "expensive",
-        "hint": "Not cheap",
-        "common": true
-    },
-    {
-        "word": "sunshine",
-        "hint": "The light and warmth from the sun",
-        "common": true
-    },
-    {
-        "word": "umbrella",
-        "hint": "A device used to protect from rain or sun",
-        "common": true
-    },
-    {
-        "word": "adventure",
-        "hint": "An exciting and unusual experience or journey",
-        "common": true
-    },
-    {
-        "word": "chocolate",
-        "hint": "A sweet, usually brown, treat made from cacao beans",
-        "common": true
-    },
-    {
-        "word": "mountain",
-        "hint": "A large landform that rises steeply above its surroundings",
-        "common": true
-    },
-    {
-        "word": "oxygen",
-        "hint": "A chemical element essential for life on Earth",
-        "common": true
-    },
-    {
-        "word": "wonderful",
-        "hint": "Something that is extremely good or pleasing",
-        "common": true
-    },
-    {
-        "word": "happiness",
-        "hint": "The state of being happy, content, or joyful",
-        "common": true
-    },
-    {
-        "word": "telephone",
-        "hint": "A device for transmitting voice or communication over a distance",
-        "common": true
-    },
-    {
-        "word": "butterfly",
-        "hint": "A colorful insect with large, often brightly colored wings",
-        "common": true
-    },
-    {
-        "word": "mysterious",
-        "hint": "Something that is difficult to understand or explain",
-        "common": true
-    },
-    {
-        "word": "waterfall",
-        "hint": "A natural cascade of water flowing from a height",
-        "common": true
-    },
-    {
-        "word": "bicycle",
-        "hint": "A two-wheeled vehicle powered by pedaling",
-        "common": true
-    },
-    {
-        "word": "whisper",
-        "hint": "Speaking softly or quietly to avoid being heard",
-        "common": true
-    },
-    {
-        "word": "journey",
-        "hint": "A long trip or expedition, typically for adventure",
-        "common": true
-    },
-    {
-        "word": "laughter",
-        "hint": "The sound of amusement or joy",
-        "common": true
-    },
-    {
-        "word": "festival",
-        "hint": "A celebration or occasion of a particular type",
-        "common": true
-    },
-    {
-        "word": "fireworks",
-        "hint": "Explosive pyrotechnic devices used for entertainment",
-        "common": true
-    },
-    {
-        "word": "architecture",
-        "hint": "The art and science of designing and constructing buildings",
-        "common": false
-    },
-    {
-        "word": "galaxy",
-        "hint": "A vast system of stars, gas, dust, and dark matter",
-        "common": true
-    },
-    {
-        "word": "jungle",
-        "hint": "A dense, tropical forest with lush vegetation",
-        "common": true
-    },
-    {
-        "word": "independence",
-        "hint": "Freedom from outside control or support",
-        "common": true
-    },
-    {
-        "word": "adrenaline",
-        "hint": "A hormone that prepares the body for intense physical activity",
-        "common": false
-    },
-    {
-        "word": "volcano",
-        "hint": "A mountain that erupts with molten lava, ash, and gases",
-        "common": true
-    },
-    {
-        "word": "symphony",
-        "hint": "A long musical composition for an orchestra",
-        "common": false
-    },
-    {
-        "word": "fragrance",
-        "hint": "A pleasant, sweet smell or aroma",
-        "common": true
-    },
-    {
-        "word": "horizon",
-        "hint": "The line at which the Earth's surface and the sky appear to meet",
-        "common": true
-    },
-    {
-        "word": "celestial",
-        "hint": "Relating to the sky, stars, or the heavens",
-        "common": false
-    },
-    {
-        "word": "paradise",
-        "hint": "An ideal or perfect place or state of happiness",
-        "common": true
-    },
-    {
-        "word": "discovery",
-        "hint": "The act of finding or learning something new",
-        "common": true
-    },
-    {
-        "word": "keyboard",
-        "hint": "Input device for computers with keys",
-        "common": true
-    },
-    {
-        "word": "javascript",
-        "hint": "Programming language of the web",
-        "common": false
-    },
-    {
-        "word": "developer",
-        "hint": "Person who writes computer programs",
-        "common": false
-    },
-    {
-        "word": "internet",
-        "hint": "Global network connecting computers",
-        "common": true
-    },
-    {
-        "word": "browser",
-        "hint": "Software used to access the World Wide Web",
-        "common": true
-    },
-    {
-        "word": "algorithm",
-        "hint": "Step-by-step procedure for calculations",
-        "common": false
-    },
-    {
-        "word": "database",
-        "hint": "Organized collection of structured information",
-        "common": false
-    },
-    {
-        "word": "function",
-        "hint": "Self-contained module of code",
-        "common": false
-    },
-    {
-        "word": "variable",
-        "hint": "Container for storing data values",
-        "common": false
-    },
-    {
-        "word": "syntax",
-        "hint": "Set of rules that define code structure",
-        "common": false
-    },
-    {
-        "word": "framework",
-        "hint": "Platform for developing software applications",
-        "common": false
-    },
-    {
-        "word": "responsive",
-        "hint": "Design that works on any device size",
-        "common": false
-    },
-    {
-        "word": "debugging",
-        "hint": "Process of finding and fixing errors in code",
-        "common": false
-    },
-    {
-        "word": "iteration",
-        "hint": "Repetition of a process in programming",
-        "common": false
-    },
-    {
-        "word": "recursion",
-        "hint": "Function that calls itself",
-        "common": false
-    },
-    {
-        "word": "asynchronous",
-        "hint": "Operations not occurring at the same time",
-        "common": false
-    },
-    {
-        "word": "encryption",
-        "hint": "Process of encoding information",
-        "common": false
-    },
-    {
-        "word": "authentication",
-        "hint": "Verification of identity",
-        "common": false
-    },
-    {
-        "word": "repository",
-        "hint": "Storage location for software packages",
-        "common": false
-    },
-    {
-        "word": "deployment",
-        "hint": "Process of making software available for use",
-        "common": false
-    },
-    {
-        "word": "scalability",
-        "hint": "Ability of a system to handle growing amounts of work",
-        "common": false
-    },
-    {
-        "word": "virtualization",
-        "hint": "Creating virtual rather than actual versions",
-        "common": false
-    },
-    {
-        "word": "artificial",
-        "hint": "Made or produced by human beings rather than occurring naturally",
-        "common": false
-    },
-    {
-        "word": "blockchain",
-        "hint": "Decentralized digital ledger technology",
-        "common": false
-    },
-    {
-        "word": "cybersecurity",
-        "hint": "Protection of internet-connected systems",
-        "common": false
-    },
-    {
-        "word": "machinelearning",
-        "hint": "AI that allows systems to learn from data",
-        "common": false
-    },
-    {
-        "word": "neuralnetwork",
-        "hint": "Computer system modeled on the human brain",
-        "common": false
-    },
-    {
-        "word": "quantumcomputing",
-        "hint": "Computing using quantum-mechanical phenomena",
-        "common": false
-    },
-    {
-        "word": "augmentedreality",
-        "hint": "Interactive experience of real-world environment",
-        "common": false
-    },
-    {
-        "word": "virtualreality",
-        "hint": "Computer-generated simulation of 3D environment",
-        "common": false
-    },
-    {
-        "word": "internetofthings",
-        "hint": "Network of physical objects with embedded technology",
-        "common": false
-    },
-    {
-        "word": "extraterrestrial",
-        "hint": "Originating or existing outside the earth",
-        "common": false
-    },
-    {
-        "word": "photosynthesis",
-        "hint": "Process by which green plants make food",
-        "common": false
-    },
-    {
-        "word": "renaissance",
-        "hint": "Period of European cultural, artistic, and political rebirth",
-        "common": false
-    },
-    {
-        "word": "kaleidoscope",
-        "hint": "Optical instrument with mirrors reflecting colored glass",
-        "common": false
-    },
-    {
-        "word": "xylophone",
-        "hint": "Musical instrument with wooden bars struck by mallets",
-        "common": true
-    },
-    {
-        "word": "quintessential",
-        "hint": "Representing the most perfect or typical example",
-        "common": false
-    },
-    {
-        "word": "magnificent",
-        "hint": "Extremely beautiful and impressive",
-        "common": true
-    },
-    {
-        "word": "phenomenon",
-        "hint": "A fact or situation observed to exist",
-        "common": false
-    },
-    {
-        "word": "labyrinth",
-        "hint": "A complicated irregular network of passages",
-        "common": false
-    },
-    {
-        "word": "serendipity",
-        "hint": "The occurrence of events by chance in a happy or beneficial way",
-        "common": false
-    },
-    {
-        "word": "ephemeral",
-        "hint": "Lasting for a very short time",
-        "common": false
-    },
-    {
-        "word": "ubiquitous",
-        "hint": "Present, appearing, or found everywhere",
-        "common": false
-    },
-    {
-        "word": "eloquent",
-        "hint": "Fluent or persuasive in speaking or writing",
-        "common": false
-    },
-    {
-        "word": "resilience",
-        "hint": "The capacity to recover quickly from difficulties",
-        "common": false
-    },
-    {
-        "word": "nostalgia",
-        "hint": "A sentimental longing for the past",
-        "common": true
-    },
-    {
-        "word": "ambivalence",
-        "hint": "Having mixed feelings about something",
-        "common": false
-    },
-    {
-        "word": "magnanimous",
-        "hint": "Generous or forgiving, especially toward a rival",
-        "common": false
-    },
-    {
-        "word": "perseverance",
-        "hint": "Persistence in doing something despite difficulty",
-        "common": true
-    },
-    {
-        "word": "benevolent",
-        "hint": "Well meaning and kindly",
-        "common": false
-    },
-    {
-        "word": "pizza",
-        "hint": "Italian dish with toppings",
-        "common": true
-    },
-    {
-        "word": "rocket",
-        "hint": "Space vehicle",
-        "common": true
-    },
-    {
-        "word": "dinosaur",
-        "hint": "Prehistoric creature",
-        "common": true
-    },
-    {
-        "word": "basketball",
-        "hint": "Sport with hoop and ball",
-        "common": true
-    },
-    {
-        "word": "sunflower",
-        "hint": "Tall yellow flower",
-        "common": true
-    },
-    {
-        "word": "watermelon",
-        "hint": "Large juicy summer fruit",
-        "common": true
-    },
-    {
-        "word": "notebook",
-        "hint": "Book for writing notes",
-        "common": true
-    },
-    {
-        "word": "backpack",
-        "hint": "Bag carried on the back",
-        "common": true
-    },
-    {
-        "word": "sandcastle",
-        "hint": "Structure made of sand at the beach",
-        "common": true
-    },
-    {
-        "word": "skyscraper",
-        "hint": "Very tall building",
-        "common": true
-    },
-    {
-        "word": "breakfast",
-        "hint": "First meal of the day",
-        "common": true
-    },
-    {
-        "word": "hamburger",
-        "hint": "Popular fast food item",
-        "common": true
-    },
-    {
-        "word": "television",
-        "hint": "Device for watching shows",
-        "common": true
-    },
-    {
-        "word": "basket",
-        "hint": "Container made of woven materials",
-        "common": true
-    },
-    {
-        "word": "sunset",
-        "hint": "Daily disappearance of the sun",
-        "common": true
-    },
-    {
-        "word": "rainbow",
-        "hint": "Multicolored arc in the sky",
-        "common": true
-    },
-    {
-        "word": "baseball",
-        "hint": "Sport with bat and ball",
-        "common": true
-    },
-    {
-        "word": "notepad",
-        "hint": "Small pad of paper for notes",
-        "common": true
-    },
-    {
-        "word": "keychain",
-        "hint": "Small chain for holding keys",
-        "common": true
-    },
-    {
-        "word": "headphones",
-        "hint": "Device for listening to audio",
-        "common": true
-    },
-    {
-        "word": "flashlight",
-        "hint": "Portable electric light",
-        "common": true
-    },
-    {
-        "word": "bookshelf",
-        "hint": "Furniture for storing books",
-        "common": true
-    },
-    {
-        "word": "calendar",
-        "hint": "System for organizing days",
-        "common": true
-    },
-    {
-        "word": "dragonfly",
-        "hint": "Flying insect with long body",
-        "common": true
-    },
-    {
-        "word": "fireplace",
-        "hint": "Structure for containing fire",
-        "common": true
-    },
-    {
-        "word": "goldfish",
-        "hint": "Small orange pet fish",
-        "common": true
-    },
-    {
-        "word": "honeybee",
-        "hint": "Insect that produces honey",
-        "common": true
-    },
-    {
-        "word": "jellybean",
-        "hint": "Small bean-shaped candy",
-        "common": true
-    },
-    {
-        "word": "lighthouse",
-        "hint": "Tower with a bright light to guide ships",
-        "common": true
-    },
-    {
-        "word": "moonlight",
-        "hint": "Light from the moon",
-        "common": true
-    },
-    {
-        "word": "newspaper",
-        "hint": "Daily publication with news",
-        "common": true
-    },
-    {
-        "word": "pineapple",
-        "hint": "Tropical fruit with spiky skin",
-        "common": true
-    },
-    {
-        "word": "question",
-        "hint": "Sentence worded to elicit information",
-        "common": true
-    },
-    {
-        "word": "sandwich",
-        "hint": "Food item with fillings between bread",
-        "common": true
-    },
-    {
-        "word": "toothbrush",
-        "hint": "Tool for cleaning teeth",
-        "common": true
-    },
-    {
-        "word": "umbrella",
-        "hint": "Device for protection from rain",
-        "common": true
-    },
-    {
-        "word": "vacation",
-        "hint": "Extended period of leisure",
-        "common": true
-    },
-    {
-        "word": "waterfall",
-        "hint": "Falling water over a cliff",
-        "common": true
-    },
-    {
-        "word": "xylophone",
-        "hint": "Musical instrument with wooden bars",
-        "common": true
-    },
-    {
-        "word": "yesterday",
-        "hint": "The day before today",
-        "common": true
-    },
-    {
-        "word": "zeppelin",
-        "hint": "Large German airship",
-        "common": false
-    },
-    {
-        "word": "zebra",
-        "hint": "Striped black and white animal",
-        "common": true
-    },
-    {
-        "word": "zucchini",
-        "hint": "Green summer squash",
-        "common": true
-    },
-    {
-        "word": "zenith",
-        "hint": "The highest point reached by a celestial or other object",
-        "common": false
-    },
-    {
-        "word": "zephyr",
-        "hint": "A gentle, mild breeze",
-        "common": false
-    },
-    {
-        "word": "zodiac",
-        "hint": "A belt of the heavens divided into twelve equal parts",
-        "common": false
-    },
-    {
-        "word": "zoology",
-        "hint": "The scientific study of animals",
-        "common": false
-    },
-    {
-        "word": "zest",
-        "hint": "Great enthusiasm and energy",
-        "common": false
-    },
-    {
-        "word": "zigzag",
-        "hint": "A pattern of sharp turns or angles",
-        "common": false
-    },
-    {
-        "word": "zipper",
-        "hint": "A fastening device consisting of two strips of fabric with interlocking metal or plastic teeth",
-        "common": true
-    },
-    {
-        "word": "zombie",
-        "hint": "A fictional undead being created through the reanimation of a human corpse",
-        "common": true
-    },
-    {
-        "word": "zen",
-        "hint": "A state of calm attentiveness in which one's actions are guided by intuition rather than by conscious effort",
-        "common": false
-    },
-    {
-        "word": "zealot",
-        "hint": "A person who is fanatical and uncompromising in pursuit of their religious, political, or other ideals",
-        "common": false
-    },
-    {
-        "word": "zany",
-        "hint": "Amusingly unconventional and idiosyncratic",
-        "common": false
-    },
-    {
-        "word": "zestful",
-        "hint": "Full of energy and enthusiasm",
-        "common": false
-    },
-    {
-        "word": "zealous",
-        "hint": "Having or showing zeal; passionate",
-        "common": false
-    },
-    {
-        "word": "zigzagging",
-        "hint": "Moving in sharp angles or turns",
-        "common": false
-    }
+    { "word": "spaghetti", "hint": "Noodles.. in Italy" },
+    { "word": "procrastination", "hint": "The action of delaying/postponing something" },
+    { "word": "addition", "hint": "The process of adding numbers" },
+    { "word": "meeting", "hint": "Event in which people come together" },
+    { "word": "friend", "hint": "Very important person in life" },
+    { "word": "number", "hint": "Math symbol used for counting" },
+    { "word": "exchange", "hint": "The act of trading" },
+    { "word": "canvas", "hint": "Piece of fabric for oil painting" },
+    { "word": "garden", "hint": "Space for planting flower and plant" },
+    { "word": "position", "hint": "Location of someone or something" },
+    { "word": "feather", "hint": "Hair like outer covering of bird" },
+    { "word": "comfort", "hint": "A pleasant feeling of relaxation" },
+    { "word": "tongue", "hint": "The muscular organ of mouth" },
+    { "word": "expansion", "hint": "The process of increase or grow" },
+    { "word": "country", "hint": "A politically identified region" },
+    { "word": "group", "hint": "A number of objects or persons" },
+    { "word": "taste", "hint": "Ability of tongue to detect flavour" },
+    { "word": "store", "hint": "Large shop where goods are traded" },
+    { "word": "field", "hint": "Area of land for farming activities" },
+    { "word": "tomatoes", "hint": "Good for salad.. or pizza sauce!" },
+    { "word": "pocket", "hint": "A bag for carrying small items" },
+    { "word": "needle", "hint": "A thin and sharp metal pin" },
+    { "word": "bitcoin", "hint": "It's the King of Crypto" },
+    { "word": "expert", "hint": "Person with extensive knowledge" },
+    { "word": "statement", "hint": "A declaration of something" },
+    { "word": "albany", "hint": "The capital city of the state of New York" },
+    { "word": "library", "hint": "Place containing collection of books" },
+    { "word": "queen", "hint": "Best band in the history" },
+    { "word": "music", "hint": "Without it..life would be boring" },
+    { "word": "expensive", "hint": "Not cheap" },
+    { "word": "sunshine", "hint": "The light and warmth from the sun" },
+    { "word": "umbrella", "hint": "A device used to protect from rain or sun" },
+    { "word": "adventure", "hint": "An exciting and unusual experience or journey" },
+    { "word": "chocolate", "hint": "A sweet, usually brown, treat made from cacao beans" },
+    { "word": "mountain", "hint": "A large landform that rises steeply above its surroundings" },
+    { "word": "oxygen", "hint": "A chemical element essential for life on Earth" },
+    { "word": "wonderful", "hint": "Something that is extremely good or pleasing" },
+    { "word": "happiness", "hint": "The state of being happy, content, or joyful" },
+    { "word": "telephone", "hint": "A device for transmitting voice or communication over a distance" },
+    { "word": "butterfly", "hint": "A colorful insect with large, often brightly colored wings" },
+    { "word": "mysterious", "hint": "Something that is difficult to understand or explain" },
+    { "word": "waterfall", "hint": "A natural cascade of water flowing from a height" },
+    { "word": "bicycle", "hint": "A two-wheeled vehicle powered by pedaling" },
+    { "word": "whisper", "hint": "Speaking softly or quietly to avoid being heard" },
+    { "word": "journey", "hint": "A long trip or expedition, typically for adventure" },
+    { "word": "laughter", "hint": "The sound of amusement or joy" },
+    { "word": "noodles", "hint": "Spaghetti.. in China" },
+    { "word": "festival", "hint": "A celebration or occasion of a particular type" },
+    { "word": "fireworks", "hint": "Explosive pyrotechnic devices used for entertainment" },
+    { "word": "architecture", "hint": "The art and science of designing and constructing buildings" },
+    { "word": "galaxy", "hint": "A vast system of stars, gas, dust, and dark matter" },
+    { "word": "jungle", "hint": "A dense, tropical forest with lush vegetation" },
+    { "word": "independence", "hint": "Freedom from outside control or support" },
+    { "word": "adrenaline", "hint": "A hormone that prepares the body for intense physical activity" },
+    { "word": "volcano", "hint": "A mountain that erupts with molten lava, ash, and gases" },
+    { "word": "symphony", "hint": "A long musical composition for an orchestra" },
+    { "word": "fragrance", "hint": "A pleasant, sweet smell or aroma" },
+    { "word": "horizon", "hint": "The line at which the Earth's surface and the sky appear to meet" },
+    { "word": "celestial", "hint": "Relating to the sky, stars, or the heavens" },
+    { "word": "paradise", "hint": "An ideal or perfect place or state of happiness" },
+    { "word": "discovery", "hint": "The act of finding or learning something new" },
+    { "word": "keyboard", "hint": "Input device for computers with keys" },
+    { "word": "javascript", "hint": "Programming language of the web" },
+    { "word": "developer", "hint": "Person who writes computer programs" },
+    { "word": "internet", "hint": "Global network connecting computers" },
+    { "word": "browser", "hint": "Software used to access the World Wide Web" },
+    { "word": "algorithm", "hint": "Step-by-step procedure for calculations" },
+    { "word": "database", "hint": "Organized collection of structured information" },
+    { "word": "function", "hint": "Self-contained module of code" },
+    { "word": "variable", "hint": "Container for storing data values" },
+    { "word": "syntax", "hint": "Set of rules that define code structure" },
+    { "word": "framework", "hint": "Platform for developing software applications" },
+    { "word": "responsive", "hint": "Design that works on any device size" },
+    { "word": "debugging", "hint": "Process of finding and fixing errors in code" },
+    { "word": "iteration", "hint": "Repetition of a process in programming" },
+    { "word": "asynchronous", "hint": "Operations not occurring at the same time" },
+    { "word": "encryption", "hint": "Process of encoding information" },
+    { "word": "authentication", "hint": "Verification of identity" },
+    { "word": "repository", "hint": "Storage location for software packages" },
+    { "word": "deployment", "hint": "Process of making software available for use" },
+    { "word": "scalability", "hint": "Ability of a system to handle growing amounts of work" },
+    { "word": "virtualization", "hint": "Creating virtual rather than actual versions" },
+    { "word": "artificial", "hint": "Made or produced by human beings rather than occurring naturally" },
+    { "word": "blockchain", "hint": "Decentralized digital ledger technology" },
+    { "word": "cybersecurity", "hint": "Protection of internet-connected systems" },
+    { "word": "machinelearning", "hint": "AI that allows systems to learn from data" },
+    { "word": "neuralnetwork", "hint": "Computer system modeled on the human brain" },
+    { "word": "quantumcomputing", "hint": "Computing using quantum-mechanical phenomena" },
+    { "word": "virtualreality", "hint": "Computer-generated simulation of 3D environment" },
+    { "word": "internetofthings", "hint": "Network of physical objects with embedded technology" },
+    { "word": "extraterrestrial", "hint": "Originating or existing outside the earth" },
+    { "word": "photosynthesis", "hint": "Process by which green plants make food" },
+    { "word": "renaissance", "hint": "Period of European cultural, artistic, and political rebirth" },
+    { "word": "kaleidoscope", "hint": "Optical instrument with mirrors reflecting colored glass" },
+    { "word": "xylophone", "hint": "Musical instrument with wooden bars struck by mallets" },
+    { "word": "quintessential", "hint": "Representing the most perfect or typical example" },
+    { "word": "magnificent", "hint": "Extremely beautiful and impressive" },
+    { "word": "phenomenon", "hint": "A fact or situation observed to exist" },
+    { "word": "zephyr", "hint": "A gentle, mild breeze" },
+    { "word": "quasar", "hint": "Massive and extremely remote celestial object" },
+    { "word": "jubilee", "hint": "Special anniversary of an event" },
+    { "word": "equilibrium", "hint": "A state of physical balance" },
+    { "word": "kaleidoscopic", "hint": "Having complex patterns of colors" },
+    { "word": "labyrinth", "hint": "A complicated irregular network of passages" },
+    { "word": "cinnamon", "hint": "Aromatic spice from tree bark" },
+    { "word": "harmony", "hint": "Pleasant combination of musical notes" },
+    { "word": "velocity", "hint": "Speed of something in a given direction" },
+    { "word": "whistle", "hint": "Clear shrill sound made by forcing breath" },
+    { "word": "diamond", "hint": "Precious stone of pure carbon" },
+    { "word": "eclipse", "hint": "Obscuring of light from one celestial body" },
+    { "word": "flamingo", "hint": "Pink wading bird with long legs" },
+    { "word": "giraffe", "hint": "Tall African animal with long neck" },
+    { "word": "hurricane", "hint": "Tropical storm with violent wind" },
+    { "word": "illusion", "hint": "Deceptive appearance or impression" },
+    { "word": "jigsaw", "hint": "Puzzle consisting of irregular pieces" },
+    { "word": "kangaroo", "hint": "Australian marsupial with powerful hind legs" },
+    { "word": "lightning", "hint": "Electrical discharge during a storm" },
+    { "word": "moonlight", "hint": "Light reflected from the moon" },
+    { "word": "notebook", "hint": "Book of blank pages for writing" },
+    { "word": "octopus", "hint": "Sea creature with eight arms" },
+    { "word": "penguin", "hint": "Flightless bird of southern hemisphere" },
+    { "word": "quicksand", "hint": "Loose wet sand that yields to pressure" },
+    { "word": "rainbow", "hint": "Meteorological phenomenon with spectrum of light" },
+    { "word": "sunflower", "hint": "Tall plant with large yellow flowers" },
+    { "word": "tornado", "hint": "Violently rotating column of air" },
+    { "word": "universe", "hint": "All existing matter and space" },
+    { "word": "violin", "hint": "Stringed musical instrument played with a bow" },
+    { "word": "watermelon", "hint": "Large juicy fruit with green rind" },
+  
+    { "word": "yesterday", "hint": "The day before today" },
+    { "word": "zeppelin", "hint": "Large German dirigible airship" },
+    { "word": "acoustic", "hint": "Relating to sound or hearing" },
+    { "word": "basketball", "hint": "Game played between two teams of five players" },
+    { "word": "carnival", "hint": "Traveling amusement show" },
+    { "word": "dolphin", "hint": "Intelligent aquatic mammal" },
+    { "word": "elephant", "hint": "Large mammal with trunk and tusks" },
+    { "word": "fireplace", "hint": "Structure for containing a fire" },
+    { "word": "gondola", "hint": "Venetian canal boat" },
+    { "word": "hamburger", "hint": "Ground beef patty served in a bun" },
+    { "word": "igloo", "hint": "Eskimo house made of snow blocks" },
+    { "word": "jacket", "hint": "Short coat" },
+    { "word": "koala", "hint": "Australian tree-dwelling marsupial" },
+    { "word": "lemonade", "hint": "Sweetened beverage made from lemons" },
+    { "word": "mushroom", "hint": "Fungal growth often used as food" },
+
+    { "word": "orchestra", "hint": "Large instrumental ensemble" },
+  
+
+    { "word": "rhinoceros", "hint": "Large thick-skinned mammal with horn(s)" },
+    { "word": "sandcastle", "hint": "Sculpture made of damp sand" },
+    { "word": "telescope", "hint": "Optical instrument for viewing distant objects" },
+    { "word": "ukulele", "hint": "Small four-stringed Hawaiian guitar" },
+    { "word": "vampire", "hint": "Mythological creature that drinks blood" },
+    { "word": "waffle", "hint": "Batter cake with square indentations" },
+
+    { "word": "yacht", "hint": "Medium-sized sailboat used for racing" },
+    { "word": "zigzag", "hint": "Line or course having sharp alternate turns" },
+    { "word": "avalanche", "hint": "Mass of snow sliding down a mountain" },
+    { "word": "blackhole", "hint": "Region of spacetime with extreme gravity" },
+    { "word": "cappuccino", "hint": "Espresso coffee with steamed milk" },
+    { "word": "dictionary", "hint": "Reference book containing words and definitions" },
+    { "word": "escalator", "hint": "Moving staircase" },
+    { "word": "flashlight", "hint": "Portable electric light" },
+    { "word": "grenadine", "hint": "Red syrup made from pomegranates" },
+    { "word": "hologram", "hint": "Three-dimensional photographic image" },
+    { "word": "infinity", "hint": "Concept of something without limit" },
+    { "word": "jellyfish", "hint": "Marine animal with gelatinous umbrella-shaped body" },
+    { "word": "kayak", "hint": "Small narrow boat propelled with a double-bladed paddle" },
+    { "word": "lighthouse", "hint": "Tower with a light to guide ships" },
+    { "word": "meteor", "hint": "Streak of light in the sky from a meteoroid" },
+   
+  
+    { "word": "pantomime", "hint": "Dramatic entertainment using gestures without speech" },
+    { "word": "quicksilver", "hint": "Liquid metal, mercury" },
+    { "word": "raspberry", "hint": "Aggregate fruit from various plant species" },
+    { "word": "saxophone", "hint": "Woodwind instrument with a single reed" },
+    { "word": "trampoline", "hint": "Apparatus for jumping on consisting of fabric stretched over frame" },
+    { "word": "utopia", "hint": "Imagined perfect society" },
+    { "word": "volleyball", "hint": "Game played by two teams hitting a ball over a net" },
+    { "word": "wavelength", "hint": "Distance between successive crests of a wave" },
+    { "word": "xenophobia", "hint": "Dislike of or prejudice against people from other countries" },
+    { "word": "yellowstone", "hint": "First national park in the United States" },
+    { "word": "zucchini", "hint": "Variety of summer squash" },
+    { "word": "aquarium", "hint": "Transparent tank of water for fish" },
+    { "word": "ballet", "hint": "Classical dance form" },
+    { "word": "carousel", "hint": "Merry-go-round at a fair" },
+    { "word": "dynamite", "hint": "High explosive containing nitroglycerin" },
+    { "word": "emerald", "hint": "Bright green precious stone" },
+    { "word": "fossil", "hint": "Preserved remains of ancient organisms" },
+    { "word": "gazelle", "hint": "Graceful swift antelope" },
+    { "word": "hummingbird", "hint": "Tiny bird capable of hovering" },
+    { "word": "island", "hint": "Land surrounded by water" },
+    { "word": "jackhammer", "hint": "Portable pneumatic hammer" },
+    { "word": "ketchup", "hint": "Thick sauce made from tomatoes" },
+    { "word": "limousine", "hint": "Luxury sedan automobile" },
+    { "word": "marmalade", "hint": "Jam made from citrus fruit" },
+    { "word": "neutron", "hint": "Subatomic particle with no electric charge" },
+    { "word": "ostrich", "hint": "Large flightless African bird" },
+    { "word": "parachute", "hint": "Device used to slow descent through air" },
+    { "word": "quill", "hint": "Feather used as a pen" },
+    { "word": "reindeer", "hint": "Deer of Arctic and subarctic regions" },
+    { "word": "sapphire", "hint": "Precious gemstone, typically blue" },
+ 
+    { "word": "unicorn", "hint": "Mythical horse-like creature with single horn" },
+    { "word": "vortex", "hint": "Whirling mass of fluid or air" },
+    { "word": "wombat", "hint": "Australian burrowing marsupial" },
+    { "word": "xylophone", "hint": "Musical instrument with wooden bars" },
+    { "word": "yogurt", "hint": "Semi-solid sourish food from fermented milk" },
+    { "word": "zodiac", "hint": "Diagram of celestial constellations" }
 ]
